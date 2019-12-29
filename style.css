@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     background-color: #24252A;
 }
 
@@ -31,11 +32,13 @@ ul,a,button,h1{
   cursor: pointer;
 }
 .nav-links{
+    
     list-style: none;
 }
 
 .nav-links li{
     display: inline-block;
+    
     padding: 0 20px;
     
 }
@@ -56,4 +59,34 @@ button{
 }
 button:hover{
     background-color: rgba(0,136,169,0.7);
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    display: none;
+    color: white;
+}
+
+
+@media (max-width:835px){
+    header,
+    .nav-links li
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5% 0;
+        display: none;
+        }
+        button{
+            margin: 0 auto;
+            display: none;
+        }
+     
+    .icon{
+        display: flex;
+        justify-content: space-between;
+    }
 }
